@@ -1,3 +1,3 @@
 # My Journey
 
-Adım adım yaptığım şeyleri buraya yükleyeceğim.
+Kodluyoruz Front-End eğitimi boyunca adım adım yaptığım bütün ödev ve projeleri buraya yükleyeceğim.
