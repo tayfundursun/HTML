@@ -1,0 +1,52 @@
+#main-title {
+    color: red;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-table {
+    padding: 0.2cm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#main-article {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#main-list {
+    list-style-position: inside;
+}
+
+#discount-heading {
+    color: lawngreen;
+}
+
+.th-shop {
+    border: 1px solid black;
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.td-shop {
+    text-align: center;
+    border: 1px solid black;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-us-heading {
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-us-p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
