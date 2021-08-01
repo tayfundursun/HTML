@@ -1,0 +1,215 @@
+.header {
+    list-style-type: none;
+    margin: 10px;
+    overflow: hidden;
+    margin-right: 16px;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000000DE;
+  }
+  
+  .container {
+    text-align: center;
+    margin: 150px 150px 100px 150px;
+  }
+  
+  .search-area {
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: -77px;
+    width: 582px;
+    border-radius: 50px;
+  }
+  
+  .search-area:hover {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 2px 2px 0 rgba(0,0,0,0.19);
+    border-radius: 50px;
+  }
+  
+  .search {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+  }
+  
+  .search-img {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+  }
+  
+  .search-img span {
+    color: #9aa0a6;
+    height: 20px;
+    width: 20px;
+    margin-top: 0px;
+    display: inline-block;
+    fill: currentColor;
+    line-height: 24px;
+    position: relative;
+  }
+  
+  .input-enter {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  
+  .input-area {
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    font: 16px arial, sans-serif;
+    line-height: 34px;
+    height: 34px !important;
+    display: flex;
+  }
+  
+  .input {
+    width: 480px;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    display: flex;
+    margin-top: 9px;
+    font: 16px arial, sans-serif;
+    line-height: 34px;
+    height: 17px !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: textfield;
+    cursor: text;
+    border: none;
+  }
+  
+  .googlesearch {
+    font-family: arial, sans-serif;
+    margin: 11px 4px;
+    padding: 10px 16px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    color: #5F6368;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+  
+  .feelinglucky {
+    font-family: arial, sans-serif;
+    margin: 11px 4px;
+    padding: 10px 16px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    color: #5F6368;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+  
+  .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #dfe1e5;
+    border-top: 1px solid #dadce0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: -8px;
+    line-height: 10px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+  }
+  
+  .footerli {
+    float: left;
+    list-style: none;
+  }
+  
+  .footerli a {
+    display: block;
+    color: #70757a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin-left: 14px;
+    margin-right: -20px;
+  }
+  
+  #nav-div {
+    display: flex;
+    padding: 12px;
+    white-space: nowrap;
+  }
+
+  #left-nav-bar {
+     flex: 0 0 85%;
+  }
+
+  #right-nav-bar {
+    flex: 1;
+  }
+
+  .hover:hover {
+    text-decoration: underline;
+  }
+
+  #sign-in-button {
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    width: 70px;
+    height: 30px;
+  }
+
+  #app-button {
+    width: 16px;
+    height: 16px;
+  }
+
+  #voice-logo {
+    width: 24px;
+    margin: 5px;
+  }
+
+  .buttons {
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  .button-hover:hover {
+    border: 1px solid #9aa0a6;
+    border-radius: 4px;
+    color: black;
+  }
