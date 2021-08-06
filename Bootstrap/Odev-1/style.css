@@ -1,0 +1,51 @@
+#main-article {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#main-list {
+    list-style-position: inside;
+}
+
+.discount-heading {
+    color: lawngreen;
+}
+
+.about-us-heading {
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-us-p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.nav-links {
+    text-decoration: none;
+    padding-right: 10px;
+    text-align: center;
+    color: white;
+}
+
+.nav-links:hover {
+    color: wheat;
+}
+
+.navbar-index {
+    padding-bottom: 20px;
+    background-color: gray;
+    margin-bottom: 25px;
+}
+
+.card-aboutus {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.index-header {
+    text-decoration: none;
+    padding-right: 25px;
+    color: red;
+}
