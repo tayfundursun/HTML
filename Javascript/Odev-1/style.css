@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-div{
+    padding: 100px 20px;
+}
+
+.heading{
+    text-align: center;
+    color: orange;
+}
+
+.info{
+    text-align: center;
+    color: orange;
+}
+
+
+#clock{
+    color: orange;
+    text-align: center;
+}
+
+#p{
+    color: orange;
+    text-align: center;
+    font-size: 20px;
+}
