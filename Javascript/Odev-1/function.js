@@ -41,7 +41,7 @@ setInterval(function startTime() {
     day = "Cumartesi"
     break
 
-    case 7:
+    case 0:
     day = "Pazar"
     break        
   }
