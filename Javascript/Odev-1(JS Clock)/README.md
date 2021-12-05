@@ -2,4 +2,4 @@
 
 Website'ye gitmek için tıkla.
 
-https://tayfundursun.github.io/My-Journey/Javascript/Odev-1/index.html
+https://tayfundursun.github.io/My-Journey/Javascript/Odev-1(JS%20Clock)/
