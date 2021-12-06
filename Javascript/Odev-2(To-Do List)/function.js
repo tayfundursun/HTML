@@ -1,28 +1,41 @@
 let userInput = document.querySelector("#task");
+let userDOM = document.querySelector("#list");
 
 // Adding Input Function
 function newElement(){
     let userEntry = userInput.value;
 
     // Creating a Li element and putting the input in it.
-    let userDOM = document.querySelector("#list");
     let liDOM = document.createElement("li");
-    liDOM.innerHTML = `${userEntry} <span onclick="removeList()" class="close">&times;</span>`;
+    liDOM.innerHTML = `${userEntry} 
+        <span onclick="crossOut()" class="close">&times</span>`;
 
     if(userEntry === ""){
-        console.log("input empty");
         // Insert Alert function here.
+
     } else {
-        userDOM.append(liDOM);
+        liDOM.setAttribute("onclick","crossOut()");
+        liDOM.setAttribute("class", "myLi");
+        userDOM.appendChild(liDOM);
         document.querySelector(".placeholderValue").value = "";
     }
-    
-    console.log(userEntry, "getting input works");
+
+    // Deleting the Li element
+    let closeButton = document.getElementsByClassName("close");
+    for (let i = 0; i < closeButton.length; i++) {                                        
+        closeButton[i].onclick = function () {
+            let div = this.parentElement;
+            div.style.display = "none"; 
+        }
+    }
 }
 
-// Removing Input Function
-function removeList(){
+// Crossing Out when the work is done.
+function crossOut(){
+    let crossDOM = document.getElementsByClassName("myLi");
     
-
-    console.log("deleting function works.")
+    // find a way to get the correct index number!!
+    crossDOM[1].setAttribute("class", "checked");
+    
 }
+
