@@ -35,7 +35,7 @@ ul li:hover {
 }
 
 ul li.checked {
-  background: #276678;
+  background: rgb(34, 218, 117);
   color: #fff;
   text-decoration: line-through;
 }
@@ -53,6 +53,10 @@ ul li.checked::before {
   width: 7px;
 }
 
+.toast-body{
+  margin-right: 45px;
+}
+
 .closeToast {
   position: absolute;
   right: 0;
@@ -61,7 +65,7 @@ ul li.checked::before {
 }
 
 .closeToast:hover {
-  background-color: rgb(10, 78, 225);
+  background-color: rgb(52, 107, 225);
 }
 
 .close{

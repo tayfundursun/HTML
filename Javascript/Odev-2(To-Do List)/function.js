@@ -10,14 +10,14 @@ function newElement(){
     liDOM.innerHTML = `${userEntry} 
         <span onclick="crossOut()" class="close">&times</span>`;
 
-    if(userEntry === ""){
-        // Insert Alert function here.
-
-    } else {
-        liDOM.setAttribute("onclick","crossOut()");
-        liDOM.setAttribute("class", "myLi");
+    // If entry is nothing or just spaces.
+    if(userEntry == "" || userEntry.trim().length == 0){
+        document.querySelector(".placeholderValue").value = "";
+        $('.error').toast("show");
+    } else { // If entry is a valid input.
         userDOM.appendChild(liDOM);
         document.querySelector(".placeholderValue").value = "";
+        $('.success').toast("show");
     }
 
     // Deleting the Li element
@@ -31,11 +31,17 @@ function newElement(){
 }
 
 // Crossing Out when the work is done.
-function crossOut(){
-    let crossDOM = document.getElementsByClassName("myLi");
-    
-    // find a way to get the correct index number!!
-    crossDOM[1].setAttribute("class", "checked");
-    
-}
+userDOM.addEventListener("click", function(event){
+    if(event.target.tagName === "LI"){
+        event.target.classList.toggle("checked");
+    }
+});
 
+// Pressing Enter Button works as well while entering value.
+let conDOM = document.querySelector(".container")
+conDOM.addEventListener("keyup", function(event){
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        newElement();
+    }
+});
