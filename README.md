@@ -9,3 +9,4 @@ Kodluyoruz Front-End eğitimi boyunca adım adım yaptığım bütün ödev ve p
 - [Instagram Clone](https://github.com/tayfundursun/My-Journey/tree/main/Bootstrap/Odev-2(Instagram%20Clone))
 - [Linkedin Clone](https://github.com/tayfundursun/My-Journey/tree/main/Bootstrap/Odev-3(Linkedin%20Clone))
 - [JS Clock](https://github.com/tayfundursun/My-Journey/tree/main/Javascript/Odev-1(JS%20Clock))
+- [JS To-Do list](https://github.com/tayfundursun/My-Journey/tree/main/Javascript/Odev-2(To-Do%20List))
