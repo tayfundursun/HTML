@@ -99,10 +99,11 @@ function createMenu(name) {
     <img src="${name.img}" alt="${name.title}" class="photo">
 
     <div class="menu-info">
-    <div class="menu-title">
+      <div class="menu-title">
         <h4>${name.title}</h4>
         <h4 class="price">${name.price}</h4>
       </div>
+      
       <div class="menu-text">
         ${name.desc}
       </div>
