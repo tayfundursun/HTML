@@ -30,7 +30,7 @@ h2 {
 }
 
 .photo {
-    width: 30%;
+    width: 20%;
     height: 175px;
     object-fit: cover;
     border: 0.25rem solid black;
@@ -39,6 +39,7 @@ h2 {
 .menu-items {
     display: flex;
     margin: 20px 0;
+    width: 50%;
 }
 .menu-info {
     margin-left: 20px;

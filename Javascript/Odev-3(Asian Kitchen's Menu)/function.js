@@ -86,9 +86,59 @@ const menu = [
 let buttonDOM = document.querySelector(".btn-container");
 let mainDOM = document.querySelector(".section-center");
 
+// Filtering the Certain Menu From the Array Object
+function All() {
+  mainDOM.innerHTML = "";
+
+  for(let i=0; i < menu.length; i++){
+    mainDOM.innerHTML += (createMenu(menu[i]));
+  }
+
+  console.log("all");
+};
+
+function Korea() {
+  mainDOM.innerHTML = "";
+
+  let koreanMenu = menu.filter((objects) => objects.category == "Korea");
+  
+  for(let i=0; i < koreanMenu.length; i++){
+    mainDOM.innerHTML += (createMenu(koreanMenu[i]));
+  }
+
+  console.log("korea");
+};
+
+function Japan() {
+  mainDOM.innerHTML = "";
+
+  let japanMenu = menu.filter((objects) => objects.category == "Japan");
+  for(let i=0; i < japanMenu.length; i++){
+    mainDOM.innerHTML += (createMenu(japanMenu[i]));
+  }
+
+  console.log("japan");
+};
+
+function China() {
+  mainDOM.innerHTML = "";
+
+  let chinaMenu = menu.filter((objects) => objects.category == "China");
+  for(let i=0; i < chinaMenu.length; i++){
+    mainDOM.innerHTML += (createMenu(chinaMenu[i]));
+  }
+  
+  console.log("china");
+};
+
 // Creating Button HTML
 function createButton(buttonID) {
-  let button = `<button onclick="${buttonID}()" class="btn btn-outline-danger btn-item" id="${buttonID}">${buttonID}</button>`;
+  let button = `
+  <button
+  onclick="${buttonID}()" 
+  class="btn btn-outline-danger btn-item" 
+  id="${buttonID}">${buttonID}</button>`;
+
   return button;
 }
 
@@ -103,7 +153,7 @@ function createMenu(name) {
         <h4>${name.title}</h4>
         <h4 class="price">${name.price}</h4>
       </div>
-      
+
       <div class="menu-text">
         ${name.desc}
       </div>
@@ -115,48 +165,11 @@ function createMenu(name) {
 }
 
 function addButtons(){
-  buttonDOM.innerHTML = createButton("All") + " " + createButton("Korea") + " " + createButton("Japan") + " " + createButton("China");
+  buttonDOM.innerHTML = createButton("All") + " "
+                      + createButton("Korea") + " "
+                      + createButton("Japan") + " " 
+                      + createButton("China");
 }
-
-// Filtering the Certain Menu From the Array Object
-function All() {
-  mainDOM.innerHTML = "";
-
-  menu.forEach((element) => {
-    mainDOM.innerHTML += (" " + createMenu(element));
-  });
-  console.log("all");
-};
-
-function Korea() {
-  mainDOM.innerHTML = "";
-
-  let koreanMenu = menu.filter(objects => objects.category == "Korea");
-  koreanMenu.forEach(element => {
-    mainDOM.innerHTML += (" " + createMenu(element));
-  });
-  console.log("korea");
-};
-
-function Japan() {
-  mainDOM.innerHTML = "";
-
-  let japanMenu = menu.filter(objects => objects.category == "Japan");
-  japanMenu.forEach(element => {
-    mainDOM.innerHTML += (" " + createMenu(element));
-  });
-  console.log("japan");
-};
-
-function China() {
-  mainDOM.innerHTML = "";
-
-  let chinaMenu = menu.filter(objects => objects.category == "China");
-  chinaMenu.forEach(element => {
-    mainDOM.innerHTML += (" " + createMenu(element));
-  });
-  console.log("china");
-};
 
 addButtons();
 All();
