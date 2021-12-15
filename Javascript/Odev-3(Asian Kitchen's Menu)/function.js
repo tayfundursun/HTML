@@ -86,6 +86,46 @@ const menu = [
 let buttonDOM = document.querySelector(".btn-container");
 let mainDOM = document.querySelector(".section-center");
 
+// Creating Button HTML
+function createButton(buttonID) {
+  let button = `
+  <button
+  onclick="${buttonID}()" 
+  class="btn btn-outline-danger btn-item" 
+  id="${buttonID}">${buttonID}</button>`;
+
+  return button;
+}
+
+function addButtons(){
+  buttonDOM.innerHTML = createButton("All") + " "
+                      + createButton("Korea") + " "
+                      + createButton("Japan") + " " 
+                      + createButton("China");
+}
+
+// Creating Menu HTML
+function createMenu(name) {
+  let item = `
+  <div class="menu-items">
+    <img src="${name.img}" alt="${name.title}" class="photo">
+
+    <div class="menu-info">
+      <div class="menu-title">
+        <h4>${name.title}</h4>
+        <h4 class="price">${name.price}</h4>
+      </div>
+
+      <div class="menu-text">
+        ${name.desc}
+      </div>
+    </div>
+
+  </div>`;
+
+  return item;
+}
+
 // Filtering the Certain Menu From the Array Object
 function All() {
   mainDOM.innerHTML = "";
@@ -130,46 +170,6 @@ function China() {
   
   console.log("china");
 };
-
-// Creating Button HTML
-function createButton(buttonID) {
-  let button = `
-  <button
-  onclick="${buttonID}()" 
-  class="btn btn-outline-danger btn-item" 
-  id="${buttonID}">${buttonID}</button>`;
-
-  return button;
-}
-
-// Creating Menu HTML
-function createMenu(name) {
-  let item = `
-  <div class="menu-items">
-    <img src="${name.img}" alt="${name.title}" class="photo">
-
-    <div class="menu-info">
-      <div class="menu-title">
-        <h4>${name.title}</h4>
-        <h4 class="price">${name.price}</h4>
-      </div>
-
-      <div class="menu-text">
-        ${name.desc}
-      </div>
-    </div>
-
-  </div>`;
-
-  return item;
-}
-
-function addButtons(){
-  buttonDOM.innerHTML = createButton("All") + " "
-                      + createButton("Korea") + " "
-                      + createButton("Japan") + " " 
-                      + createButton("China");
-}
 
 addButtons();
 All();
